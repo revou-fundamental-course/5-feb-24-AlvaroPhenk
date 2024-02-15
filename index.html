@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RevoU Temperature Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <!--CSS file link source-->
 </head>
 <body>
@@ -18,33 +18,36 @@
             <span class="icon1">
                 ±
             </span>
-            <!-- Note: icons dapat dari Word-->
+            <!-- Note: icons from Word-->
         </div>
         <div class="celcius">
-            <input type="text" id="numberInput1" placeholder="Celcius">
+            <input type="number" placeholder="Celcius to Fahrenheit">
             <span class="icon2">
                 ℃
             </span>
         </div>
         <div class="fahrenheit">
-            <input type="text" id="numberInput2" placeholder="Fahrenheit">
+            <input type="number" placeholder="Fahrenheit to Celcius">
             <span class="icon2">
                 ℉
             </span>
-            <!-- Note: icons dapat dari Word-->
+            <!-- Note: icons from Word-->
         </div>
         <div class="button">
             <button id="button"> </button>
-            <button onclick="clearText" id="clearedText">Clear</button>
-            <button onclick="reverseText" id="reversedText">Reverse</button>
+            <button id="clear">Clear</button>
             <button id="button"> </button>
         </div>
     </div>
-    <div class="formula">
+    <div>
         <h4>Celcius to Fahrenheit Formula</h4>
-            <p>℉=℃×9/5+32</p>
+            <p>℉ = ℃ × 9/5 + 32</p>
     </div>
-    <script src="script.js"></script>
+    <div>
+        <h4>Fahrenheit to Celcius Formula</h4>
+        <p id="formula">℃ = (℉ - 32) 5/9</p>
+    </div>
+    <script src="JS/script.js"></script>
     <!--JavaScript file link source-->
 </body>
 </html>
